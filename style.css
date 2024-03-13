@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full height of the viewport */
+    margin: 0; /* Remove default margin */
+    
+}
+
+.clock {
+    text-align: center;
+    width: 100%; /* Span the entire width of the viewport */
+}
+
+.clock-face {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px auto; /* Center horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock-time {
+    font-size: 48px !important; /* Ensure font size is applied */
+    display: inline-block; /* Ensure proper centering */
+}
+
+
+.alarm-container {
+    margin-bottom: 20px;
+}
+
+.alarms {
+    text-align: left;
+}
+
+.delete-button {
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}

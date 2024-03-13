@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: lavender;">
+    <div class="container">
+        <div class="clock">
+            <div class="clock-face">
+                <div class="clock-time" id="clock-time" style="font-size: 100px;text-align: center;vertical-align: middle;"></div>
+            </div><br/>
+            <div class="alarm-container">
+                <h2>Set Alarm</h2>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="hour">Hour</label>
+                        <input type="number" class="form-control" id="hour" placeholder="Hour" min="1" max="12">
+                    </div>
+                    <div class="col">
+                        <label for="minute">Minute</label>
+                        <input type="number" class="form-control" id="minute" placeholder="Minute" min="0" max="59">
+                    </div>
+                    <div class="col">
+                        <label for="second">Second</label>
+                        <input type="number" class="form-control" id="second" placeholder="Second" min="0" max="59">
+                    </div>
+                    <div class="col">
+                        <label for="ampm">AM/PM</label>
+                        <select class="form-control" id="ampm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="set-alarm" class="btn btn-primary"><i class="fas fa-plus"></i> Add Alarm</button>
+            </div><br/>
+            <div class="alarms">
+                <h2>Alarms</h2>
+                <ul id="alarm-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
